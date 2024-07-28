@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>JustBeCause</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo(1).png" alt="JustBeCauseLogo" class="logo">
+        <nav>
+            <ul class="flex">
+                <a href="index.html"><li>Home</li></a>
+                <a href="search.html"><li>Search</li></a>
+                <a href="about.html"><li>About</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="statistics">
+        <div class="statistic" onclick="openModal('modal1')">
+            <h2>1 in 9</h2>
+            <p>People globally suffer from hunger</p>
+        </div>
+        <div class="statistic" onclick="openModal('modal2')">
+            <h2>Over 100 Million</h2>
+            <p>People are homeless worldwide</p>
+        </div>
+        <div class="statistic" onclick="openModal('modal3')">
+            <h2>Every 10 Seconds</h2>
+            <p>Someone dies from hunger-related causes</p>
+        </div>
+    </section>
+
+    <div class="hero">
+        <img src="images/hero.jpeg" class="hero-image">
+        <div class="hero-text">
+            <h1>JustBeCause</h1>
+            <p>Be the change you want to see</p>
+            <div class="button-container">
+                <a href="search.html" class="button">Search Charities</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 JustBeCause. All rights reserved.</p>
+            <ul class="socials">
+                <li><a href="#" class="tooltip" data-tooltip="Facebook">Facebook</a></li>
+                <li><a href="#" class="tooltip" data-tooltip="Twitter">Twitter</a></li>
+                <li><a href="#" class="tooltip" data-tooltip="Instagram">Instagram</a></li>
+                <li><a href="#" class="tooltip" data-tooltip="LinkedIn">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>1 in 9</h2>
+            <p>More detailed information about global hunger...</p>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Over 100 Million</h2>
+            <p>More detailed information about homelessness...</p>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Every 10 Seconds</h2>
+            <p>More detailed information about hunger-related deaths...</p>
+        </div>
+    </div>
+</body>
+</html>
+
